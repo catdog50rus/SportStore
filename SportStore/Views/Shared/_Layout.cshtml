@@ -10,16 +10,24 @@
 </head>
 
 <body>
-    <div class="navbar bg-primary navbar-dark justify-content-center" role="navigation">
-        <a class="navbar-brand" href="#">Магазин спортивных товаров</a>
-    </div>
-    <div class="row m-1 p-1">
-        <div id="categories" class="col-3">
-            @await Component.InvokeAsync("NavigationMenu")
+    <header>
+        <div class="container">
+            <div class="navbar bg-primary navbar-dark justify-content-center" role="navigation">
+                <a class="navbar-brand" href="#">Магазин спортивных товаров</a>
+            </div>
         </div>
-        <div class="col-9">
-            @RenderBody()
+    </header>
+    <section>
+        <div class="container p-0">
+            <div class="row m-1 p-1">
+                <div id="categories" class="col-lg-3">
+                    @await Component.InvokeAsync("NavigationMenu")
+                </div>
+                <div class="col-lg-9">
+                    @RenderBody()
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
