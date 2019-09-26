@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" asp-href-include="/lib/bootstrap/dist/**/*.min.css"/>
-    <link rel="stylesheet" asp-href-include="/lib/fontawesome/css/*.css" />
-    
+    <link rel="stylesheet"
+          asp-href-include="/lib/bootstrap/dist/**/*.min.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />
+    <link rel="stylesheet" asp-href-include="~/lib/fontawesome/css/*.css" />
+
 </head>
 
 <body>
@@ -15,9 +17,10 @@
                 .<div class="tytleText">
                     <a class="col-8 navbar-brand font-weight-bolder" href="#"><h1>Магазин спортивных товаров</h1></a>
                 </div>
-                <div class="col-2 navbar-nav text-right text-center">
-                    @await Component.InvokeAsync("CartSummary")
-                </div>
+                 <div class="col-2 navbar-nav navbar-text text-center">
+                     <a><strong>Ваша корзина:</strong></a>
+                     @await Component.InvokeAsync("CartSummary")
+                 </div>
             </div>
         </div>
     </header>
