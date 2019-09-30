@@ -1,7 +1,7 @@
 ﻿@model Order
 
 <h2>Оформление покупки</h2>
-<p>Введиты свои данные и адрес доставки!</p>
+<p>Для оформления покупки пожалуйста введиты адрес доставки и имя получателя!</p>
 
 <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -12,7 +12,7 @@
     </div>
     <h3>Адрес доставки:</h3>
     <div class="form-group">
-        <label>Строка 1:</label><input asp-for="Line1" class="form-control" />
+        <label>Адрес:</label><input asp-for="Line1" class="form-control" />
     </div>
     <div class="form-group">
         <label>Город:</label><input asp-for="City" class="form-control" />

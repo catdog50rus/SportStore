@@ -3,7 +3,7 @@
    asp-action="List"
    asp-controller="Product"
    asp-route-category=""> 
-   Home
+   Общий каталог
 </a> 
 
 @foreach (string category in Model)
@@ -15,6 +15,5 @@
        asp-route-category="@category"
        asp-route-productPage="1">
         @category
-        Home
     </a>
 }

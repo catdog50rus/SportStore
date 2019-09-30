@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SportStore.Models;
 
 namespace SportStore.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductRepository repository;
@@ -28,7 +27,7 @@ namespace SportStore.Controllers
             if (ModelState.IsValid)
             {
                 repository.SaveProduct(product);
-                TempData["message"] = $"{product.Name} has been saved";
+                TempData["message"] = $"Товар {product.Name} успешно сохранен!";
                 return RedirectToAction("Index");
             }
             else
@@ -46,7 +45,7 @@ namespace SportStore.Controllers
             Product deletedProduct = repository.DeleteProduct(productId);
             if (deletedProduct != null)
             {
-                TempData["message"] = $"{deletedProduct.Name} was deleted";
+                TempData["message"] = $"{deletedProduct.Name} удален!";
             }
             return RedirectToAction("Index");
         }
