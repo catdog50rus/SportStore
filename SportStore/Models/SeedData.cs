@@ -21,66 +21,66 @@ namespace SportStore.Models
                 context.Products.AddRange(
                     new Product
                     {
-                        Name = "Kayak",
-                        Description = "A boat for one person",
-                        Category = "Watersports",
-                        Price = 275m
+                        Name = "Каяк",
+                        Description = "Лодка на одного человека",
+                        Category = "Водный спорт",
+                        Price = 275
                     },
                     new Product
                     {
-                        Name = "Lifejacket",
-                        Description = "Protective and fashionable",
-                        Category = "Watersports",
+                        Name = "Спасательный жилет",
+                        Description = "Защитный и модный жилет",
+                        Category = "Водный спорт",
                         Price = 48.95m
                     },
                     new Product
                     {
-                        Name = "Soccer Ball",
-                        Description = "FIFA-approved size and weight",
-                        Category = "Soccer",
+                        Name = "Футбольный мяч",
+                        Description = "Одобренн ФИФА по размеру и весу",
+                        Category = "Футбол",
                         Price = 19.50m
                     },
                     new Product
                     {
-                        Name = "Corner Flags",
-                        Description = "Give your playing field a professional touch",
-                        Category = "Soccer",
+                        Name = "Угловые флаги",
+                        Description = "Сделайте ваше игровое поле профессиональным",
+                        Category = "Футбол",
                         Price = 34.95m
                     },
                     new Product
                     {
-                        Name = "Stadium",
-                        Description = "Flat-packed 35,000-seat stadium",
-                        Category = "Soccer",
-                        Price = 79500m
+                        Name = "Стадион",
+                        Description = "Стадион на 35 000 мест",
+                        Category = "Футбол",
+                        Price = 79500
                     },
                     new Product
                     {
-                        Name = "Thinking Cap",
-                        Description = "Improve brain efficiency by 75%",
-                        Category = "Chess",
-                        Price = 16m
+                        Name = "Мыслящая шапка",
+                        Description = "Улучшить эффективность мозга на 75%",
+                        Category = "Шахматы",
+                        Price = 16
                     },
                     new Product
                     {
-                        Name = "Unsteady Chair",
-                        Description = "Secretly give your opponent a disadvantage",
-                        Category = "Chess",
+                        Name = "Качающийся стул",
+                        Description = "Тайно поставь противника в невыгодное положение",
+                        Category = "Шахматы",
                         Price = 29.95m
                     },
                     new Product
                     {
-                        Name = "Human Chess Board",
-                        Description = "A fun game for the family",
-                        Category = "Chess",
-                        Price = 75m
+                        Name = "Шахматная доска",
+                        Description = "Веселая игра для семьи",
+                        Category = "Шахматы",
+                        Price = 75
                     },
                     new Product
                     {
-                        Name = "Bling-Bling King",
-                        Description = "Gold-plated, diamond-studded King",
-                        Category = "Chess",
-                        Price = 1200m
+                        Name = "Блинг-Блинг Король",
+                        Description = "Позолоченный, усыпанный бриллиантами король",
+                        Category = "Шахматы",
+                        Price = 1200
                     }
                 );
                 context.SaveChanges();
